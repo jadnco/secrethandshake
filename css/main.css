@@ -198,7 +198,8 @@ h3 {
 #main-footer .inner {
   text-align: center;
   background: none;
-  font: 1rem/0.9 europa, San Francisco, sans-serif; }
+  font: 1rem/1.6 europa, San Francisco, sans-serif;
+  color: #B6B7BC; }
 
 #email-signup {
   position: relative;
@@ -276,7 +277,7 @@ h3 {
   text-align: center; }
 #next-meetup .section-title {
   color: #ffe435; }
-#next-meetup .date {
+#next-meetup .meetup-deets {
   margin-top: 3rem; }
 #next-meetup .sign-up {
   display: inline-block;
@@ -294,7 +295,8 @@ h3 {
 
 #testimonials .inner {
   background: #ffe435;
-  padding-top: 6.5rem; }
+  padding-top: 6.5rem;
+  height: 345px; }
 #testimonials blockquote {
   text-align: center;
   position: relative;
