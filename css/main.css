@@ -167,43 +167,38 @@ h3 {
     background: #F1F3F9; }
   .sec .section-title {
     position: absolute;
-    top: -3rem; }
+    top: -3rem;
+    z-index: 9; }
 
 .btn {
   display: inline-block;
   background: none;
+  padding: 0.7rem 2rem;
   border: 2px solid #383C41;
   border-radius: 4px;
   -webkit-transition: background 0.1s;
           transition: background 0.1s; }
   .btn:hover {
     background: rgba(56, 60, 65, 0.1); }
-  .btn.btn-small {
-    padding: 0.25rem 0.7rem; }
-  .btn.btn-large {
-    padding: 0.7rem 1.2rem; }
-    .btn.btn-large.btn-chevron {
-      padding-right: 2.15rem; }
-      .btn.btn-large.btn-chevron:after {
-        top: 16px; }
   .btn.btn-chevron {
     position: relative;
-    padding-right: 2rem; }
+    padding-right: 3rem; }
     .btn.btn-chevron:after {
       content: "";
       background: url(../images/chevron-right.svg);
       background-repeat: no-repeat;
       background-size: auto 100%;
-      margin-left: 0.7rem;
+      margin-left: 1rem;
       display: inline-block;
       position: absolute;
-      height: 12px;
-      width: 7px;
-      top: 10px; }
+      height: 16px;
+      width: 10px;
+      top: 1.3rem; }
 
 #main-footer .inner {
   text-align: center;
-  background: none; }
+  background: none;
+  font: 1rem/0.9 europa, San Francisco, sans-serif; }
 
 #email-signup {
   position: relative;
@@ -258,7 +253,7 @@ h3 {
   #hero .three.columns {
     position: absolute;
     opacity: 0.1;
-    margin-top: 8rem;
+    margin-top: 6.5rem;
     z-index: 4; }
     #hero .three.columns img {
       width: 100%;
@@ -276,19 +271,30 @@ h3 {
     border-top: 5rem solid #F1F3F9; }
 
 #next-meetup .inner {
-  border-bottom: 5rem solid #F1F3F9; }
+  border-bottom: 5rem solid #F1F3F9;
+  padding-top: 6.5rem;
+  text-align: center; }
 #next-meetup .section-title {
   color: #ffe435; }
+#next-meetup .date {
+  margin-top: 3rem; }
+#next-meetup .sign-up {
+  display: inline-block;
+  margin-top: 3rem; }
 
+#photos .inner {
+  padding: 0; }
 #photos .section-title {
-  color: #ffe435; }
+  color: #ffe435;
+  margin-left: 3rem; }
 #photos img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
 
 #testimonials .inner {
   background: #ffe435;
-  padding-top: 8rem; }
+  padding-top: 6.5rem; }
 #testimonials blockquote {
   text-align: center;
   position: relative;
