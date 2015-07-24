@@ -163,7 +163,7 @@ h3 {
   .sec:not(:first-of-type) {
     margin-top: 8rem; }
   .sec .inner {
-    padding: 5rem 3rem;
+    padding: 6.5rem 3rem 5rem 3rem;
     background: #F1F3F9; }
   .sec .section-title {
     position: absolute;
@@ -199,7 +199,8 @@ h3 {
   text-align: center;
   background: none;
   font: 1rem/1.6 europa, San Francisco, sans-serif;
-  color: #B6B7BC; }
+  color: #B6B7BC;
+  padding-top: 5rem; }
 
 #email-signup {
   position: relative;
@@ -269,11 +270,11 @@ h3 {
   position: relative;
   z-index: 2; }
   #intro .inner {
-    border-top: 5rem solid #F1F3F9; }
+    border-top: 5rem solid #F1F3F9;
+    padding-top: 4rem; }
 
 #next-meetup .inner {
   border-bottom: 5rem solid #F1F3F9;
-  padding-top: 6.5rem;
   text-align: center; }
 #next-meetup .section-title {
   color: #ffe435; }
@@ -282,6 +283,20 @@ h3 {
 #next-meetup .sign-up {
   display: inline-block;
   margin-top: 3rem; }
+
+#organizers .row:nth-of-type(2) {
+  margin-top: 5rem; }
+#organizers .person .headshot {
+  width: 180px;
+  height: auto;
+  float: left;
+  margin-right: 2rem; }
+#organizers .person .title {
+  font: 1.2rem/1.4 europa, San Francisco, sans-serif;
+  color: #B6B7BC; }
+#organizers .person .bio {
+  margin-top: 1.2rem;
+  font: 1.2rem/1.4 europa, San Francisco, sans-serif; }
 
 #photos .inner {
   padding: 0; }
@@ -295,7 +310,6 @@ h3 {
 
 #testimonials .inner {
   background: #ffe435;
-  padding-top: 6.5rem;
   height: 345px; }
 #testimonials blockquote {
   text-align: center;
@@ -308,3 +322,23 @@ h3 {
     #testimonials blockquote .author .title {
       font-style: italic;
       color: rgba(56, 60, 65, 0.4); }
+
+#not-found {
+  margin-top: 6.5rem; }
+  #not-found .inner {
+    padding: 0;
+    background: none; }
+  #not-found .cat {
+    background-image: -webkit-linear-gradient(rgba(241, 243, 249, 0.3), rgba(241, 243, 249, 0.3)), url(../images/cat-jump.gif);
+    background-image: linear-gradient(rgba(241, 243, 249, 0.3), rgba(241, 243, 249, 0.3)), url(../images/cat-jump.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+    margin-left: 0; }
+  #not-found h1 {
+    position: absolute;
+    top: -4rem;
+    margin-left: 3rem;
+    color: #ffe435;
+    z-index: 9; }
