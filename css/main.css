@@ -274,6 +274,7 @@ h3 {
       position: relative;
       z-index: 9; }
     #hero .three.columns {
+      display: block;
       position: absolute;
       opacity: 0.1;
       margin-top: 6.5rem;
