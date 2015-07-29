@@ -291,11 +291,6 @@ h3 {
             -ms-transform: rotate(12deg);
                 transform: rotate(12deg); } }
 
-@media (min-width: 1000px) {
-  #hero #hero-stripes {
-    -webkit-transform: translate3d(-2rem, -2rem, 0);
-            transform: translate3d(-2rem, -2rem, 0); } }
-
 #intro {
   margin-top: 0; }
   #intro .inner {
@@ -369,13 +364,39 @@ h3 {
     margin-top: 0; } }
 
 #photos .inner {
-  padding: 0; }
+  height: 450px;
+  padding: 0;
+  position: relative;
+  overflow: hidden; }
 #photos .section-title {
   color: #ffe435; }
-#photos img {
-  width: 100%;
-  height: auto;
-  display: block; }
+#photos ul#images {
+  height: 100%;
+  list-style: none;
+  position: relative; }
+  #photos ul#images li {
+    height: 100%;
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 2s;
+            transition: all 2s; }
+    #photos ul#images li.current {
+      opacity: 1;
+      visibility: visible; }
+    #photos ul#images li img {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      display: block; }
+
+@media (min-width: 750px) {
+  #photos .inner {
+    height: 650px; }
+  #photos ul#images li img {
+    width: 100%;
+    height: auto;
+    min-height: 100%; } }
 
 #slack .inner {
   background: none;
@@ -448,13 +469,6 @@ h3 {
         margin-top: 2rem; }
         #slack .seven.columns form input[type=submit] {
           margin-top: 0; } }
-
-@media (min-width: 1000px) {
-  #slack .seven.columns .stripes {
-    display: block;
-    position: absolute;
-    -webkit-transform: translate3d(2rem, -2rem, 0);
-            transform: translate3d(2rem, -2rem, 0); } }
 
 #testimonials .inner {
   background: #ffe435;
