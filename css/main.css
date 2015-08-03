@@ -409,9 +409,22 @@ h3 {
     display: none; }
 #slack form {
   margin-top: 3rem; }
-  #slack form .error {
-    display: inline-block;
+  #slack form .message {
+    display: none;
     margin-top: 1.2rem; }
+    #slack form .message.visible {
+      display: inline-block; }
+    #slack form .message:before {
+      content: "";
+      float: left;
+      display: inline-block;
+      background-image: url(../images/warning.svg);
+      background-size: 24px;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      margin-top: 7px;
+      margin-right: 1.2rem; }
   #slack form input {
     font: 24px/1.35 europa, San Francisco, sans-serif;
     padding: 0.25rem 0.7rem;
@@ -471,27 +484,33 @@ h3 {
           margin-top: 0; } }
 
 #testimonials .inner {
-  background: #ffe435;
-  height: 345px; }
+  background: #ffe435; }
 #testimonials blockquote {
   text-align: left;
   position: relative;
   z-index: 2; }
-  #testimonials blockquote .quote {
-    font-style: italic; }
   #testimonials blockquote .author {
-    margin-top: 2rem; }
-    #testimonials blockquote .author .title {
-      font-style: italic;
-      color: rgba(56, 60, 65, 0.4); }
+    margin-top: 1.2rem; }
+    #testimonials blockquote .author:before {
+      content: "\2013";
+      display: block; }
+    #testimonials blockquote .author .handle {
+      font: 1.2rem/1.4 europa, San Francisco, sans-serif;
+      color: #b49c00;
+      float: left;
+      clear: both; }
 
 @media (min-width: 1000px) {
   #testimonials {
     background: none; }
-    #testimonials .inner {
-      height: 345px; }
-    #testimonials blockquote {
-      text-align: center; } }
+    #testimonials blockquote .author {
+      text-align: left;
+      display: inline-block; }
+      #testimonials blockquote .author .avatar {
+        width: 60px;
+        height: 60px; }
+      #testimonials blockquote .author .name {
+        float: left; } }
 
 #not-found {
   margin-top: 6.5rem; }
