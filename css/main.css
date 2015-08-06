@@ -183,8 +183,8 @@ h3 {
     height: 240px; }
     .sec .inner svg.back .shape {
       fill: #ffe435;
-      -webkit-mask: url(/#organizers-mask);
-              mask: url(/#organizers-mask); }
+      -webkit-mask: url(./#organizers-mask);
+              mask: url(./#organizers-mask); }
 .sec .section-title {
   text-align: center;
   left: 0;
@@ -292,8 +292,8 @@ h3 {
         box-sizing: border-box; }
         #hero .nine.columns #hero-stripes .shape {
           fill: #383C41;
-          -webkit-mask: url(/#hero-mask);
-                  mask: url(/#hero-mask); }
+          -webkit-mask: url(./#hero-mask);
+                  mask: url(./#hero-mask); }
     #hero .three.columns {
       display: block;
       position: absolute;
