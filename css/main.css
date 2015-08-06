@@ -490,8 +490,8 @@ h3 {
         z-index: -1; }
         #slack .seven.columns .stripes .shape {
           fill: #383C41;
-          -webkit-mask: url(/#slack-mask);
-                  mask: url(/#slack-mask); }
+          -webkit-mask: url(./#slack-mask);
+                  mask: url(./#slack-mask); }
       #slack .seven.columns form {
         margin-top: 2rem; }
         #slack .seven.columns form input[type=submit] {
