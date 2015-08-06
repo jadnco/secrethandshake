@@ -165,15 +165,31 @@ h3 {
   display: table;
   clear: both; }
 
+.hidden-svg {
+  height: 0;
+  float: left; }
+
 .sec:not(:first-of-type) {
   margin-top: 6.5rem; }
 .sec .inner {
   padding: 4rem 2rem;
   background: #F1F3F9; }
+  .sec .inner svg.back {
+    position: absolute;
+    top: -4rem;
+    left: -2rem;
+    z-index: -1;
+    width: 33%;
+    height: 240px; }
+    .sec .inner svg.back .shape {
+      fill: #ffe435;
+      -webkit-mask: url(/#organizers-mask);
+              mask: url(/#organizers-mask); }
 .sec .section-title {
   text-align: center;
   left: 0;
   right: 0;
+  color: #383C41;
   position: absolute;
   top: -2.25rem;
   z-index: 9; }
@@ -276,8 +292,8 @@ h3 {
         box-sizing: border-box; }
         #hero .nine.columns #hero-stripes .shape {
           fill: #383C41;
-          -webkit-mask: url(#hero-mask);
-                  mask: url(#hero-mask); }
+          -webkit-mask: url(/#hero-mask);
+                  mask: url(/#hero-mask); }
     #hero .three.columns {
       display: block;
       position: absolute;
@@ -312,8 +328,6 @@ h3 {
 
 #next-meetup .inner {
   text-align: left; }
-#next-meetup .section-title {
-  color: #ffe435; }
 #next-meetup .meetup-deets {
   margin-top: 3rem; }
 #next-meetup .sign-up {
@@ -476,8 +490,8 @@ h3 {
         z-index: -1; }
         #slack .seven.columns .stripes .shape {
           fill: #383C41;
-          -webkit-mask: url(#slack-mask);
-                  mask: url(#slack-mask); }
+          -webkit-mask: url(/#slack-mask);
+                  mask: url(/#slack-mask); }
       #slack .seven.columns form {
         margin-top: 2rem; }
         #slack .seven.columns form input[type=submit] {
@@ -485,6 +499,10 @@ h3 {
 
 #testimonials .inner {
   background: #ffe435; }
+#testimonials .section-title {
+  color: #383C41; }
+#testimonials svg.back .shape {
+  fill: #F1F3F9; }
 #testimonials blockquote {
   text-align: left;
   position: relative;
