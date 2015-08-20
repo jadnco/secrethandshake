@@ -179,8 +179,8 @@ h3 {
     top: -4rem;
     left: -2rem;
     z-index: -1;
-    width: 33%;
-    height: 240px; }
+    width: 50%;
+    height: 140px; }
     .sec .inner svg.back .shape {
       fill: #ffe435;
       -webkit-mask: url(./#organizers-mask);
@@ -204,6 +204,9 @@ h3 {
   .sec .inner {
     padding: 6.5rem 3rem 5rem 3rem;
     background: #F1F3F9; }
+    .sec .inner svg.back {
+      width: 33%;
+      height: 240px; }
   .sec .section-title {
     top: -3rem;
     text-align: left;
@@ -345,6 +348,8 @@ h3 {
   margin-top: 5rem; }
 #organizers .cta {
   text-align: center; }
+  #organizers .cta .email {
+    text-decoration: underline; }
 #organizers .person {
   text-align: center; }
   #organizers .person:not(:first-of-type) {
